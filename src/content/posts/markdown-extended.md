@@ -1,15 +1,15 @@
 ---
-title: Markdown Extended Features
+title: Características extendidas de Markdown
 published: 2024-05-01
-description: 'Read more about Markdown features in Fuwari'
+description: 'Lea más sobre las funciones de Markdown en Fuwari'
 image: ''
 tags: [Demo, Example, Markdown, Fuwari]
 category: 'Examples'
 draft: false 
 ---
 
-## GitHub repository cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+## Tarjetas de repositorio de Github
+Puede agregar tarjetas dinámicas que vinculen a los repositorios de GitHub, en la carga de la página, la información del repositorio se extrae de la API de GitHub.
 
 ::github{repo="Fabrizz/MMM-OnSpotify"}
 
@@ -19,9 +19,9 @@ Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
 ::github{repo="saicaca/fuwari"}
 ```
 
-## Admonitions
+## Advertencias
 
-Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
+Se admiten los siguientes tipos de advertencias: `nota`` tip` `importante`` advertencia` `precaución '
 
 :::note
 Highlights information that users should take into account, even when skimming.
@@ -53,7 +53,7 @@ Optional information to help a user be more successful.
 :::
 ```
 
-The title of the admonition can be customized.
+El título de la advertencia se puede personalizar.
 
 :::note[MY CUSTOM TITLE]
 This is a note with a custom title.

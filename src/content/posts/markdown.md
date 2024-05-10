@@ -1,52 +1,50 @@
 ---
-title: Markdown Example
+title: Ejemplo de markdown
 published: 2023-10-01
-description: A simple example of a Markdown blog post.
+description: Un simple ejemplo de una publicación de blog de Markdown.
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: false
 ---
 
-# An h1 header
+# Un encabezado H1
 
-Paragraphs are separated by a blank line.
+Los párrafos están separados por una línea en blanco.
 
-2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
-look like:
+2 ° párrafo._Italic_, ** negrita ** y `monoespace`.Listas detalladas
+parece:
 
-- this one
-- that one
-- the other one
-
+- Éste
+- Aquél
+- el otro
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
 
-> Block quotes are
-> written like so.
+> Las citas de bloque son
+> Escrito así.
 >
-> They can span multiple paragraphs,
-> if you like.
+> Pueden abarcar múltiples párrafos,
+> Si quieres.
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+Use 3 guiones para un EM-Dash.Use 2 guiones para rangos (por ejemplo, "es todo
+En los capítulos 12-14 "). Tres puntos ... se convertirán en un elipsis.
+Unicode es compatible.☺
 
-## An h2 header
+## Un encabezado H2
+Aquí hay una lista numerada:
 
-Here's a numbered list:
+1. Primer elemento
+2. Segundo elemento
+3. Tercer artículo
 
-1. first item
-2. second item
-3. third item
+Tenga en cuenta nuevamente cómo el texto real comienza en 4 columnas en (4 caracteres
+desde el lado izquierdo).Aquí hay una muestra de código:
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+    # Déjame reiterarse ...
+    para i en 1 .. 10 {do-something (i)}
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+Como probablemente adivinó, sangró 4 espacios.Por cierto, en lugar de
+Error al bloque, puede usar bloques delimitados, si lo desea:
 
 ```
 define foobar() {
@@ -54,8 +52,8 @@ define foobar() {
 }
 ```
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+(Lo que facilita la copia y el pegado).Opcionalmente puede marcar el
+Bloque delimitado para que PANDOC sea sintaxis resaltarlo:
 
 ```python
 import time
@@ -66,30 +64,30 @@ for i in range(10):
     print i
 ```
 
-### An h3 header
+### Un encabezado H3
 
-Now a nested list:
+Ahora una lista anidada:
 
-1. First, get these ingredients:
+1. Primero, obtenga estos ingredientes:
 
-    - carrots
-    - celery
-    - lentils
+    - zanahorias
+    - apio
+    - lentejas
 
-2. Boil some water.
+2. Hervir un poco de agua.
 
-3. Dump everything in the pot and follow
-    this algorithm:
+3. Volcar todo en la olla y seguir
+    Este algoritmo:
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+        Encuentra una cuchara de madera
+        descubrir bote
+        remover
+        bote de cubierta
+        Balance de la cuchara de madera precariamente en el mango de la olla
+        espera 10 minutos
+        GOTO primer paso (o apague el quemador cuando esté terminado)
 
-    Do not bump wooden spoon or it will fall.
+    No golpee una cuchara de madera o caerá.
 
 Notice again how text always lines up on 4-space indents (including
 that last line which continues item 3 above).
@@ -106,14 +104,14 @@ size material color
 
 ---
 
-9 leather brown
-10 hemp canvas natural
-11 glass transparent
+9 de cuero marrón
+10 lienzo de cáñamo natural
+11 Vidry Transparent
 
-Table: Shoes, their sizes, and what they're made of
+Mesa: zapatos, sus tamaños y de qué están hechos
 
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
+(Lo anterior es el subtítulo de la tabla). PANDOC también admite
+Tablas de múltiples líneas:
 
 ---
 
@@ -121,14 +119,13 @@ keyword text
 
 ---
 
-red Sunsets, apples, and
-other red or reddish
-things.
+puestas de sol rojas, manzanas y
+otros rojos o rojizos
+cosas.
 
-green Leaves, grass, frogs
-and other things it's
-not easy being.
-
+Hojas verdes, hierba, ranas
+y otras cosas son
+No es fácil ser.
 ---
 
 A horizontal rule follows.

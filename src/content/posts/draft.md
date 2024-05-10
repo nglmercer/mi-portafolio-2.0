@@ -1,16 +1,16 @@
 ---
-title: Draft Example
+title: Ejemplo de borrador
 published: 2022-07-01
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: true
 ---
 
-# This Article is a Draft
+# Este artículo es un borrador
 
-This article is currently in a draft state and is not published. Therefore, it will not be visible to the general audience. The content is still a work in progress and may require further editing and review.
+Este artículo se encuentra actualmente en un borrador de estado y no se publica.Por lo tanto, no será visible para la audiencia general.El contenido sigue siendo un trabajo en progreso y puede requerir una mayor edición y revisión.
 
-When the article is ready for publication, you can update the "draft" field to "false" in the Frontmatter:
+Cuando el artículo está listo para su publicación, puede actualizar el campo "Borrador" a "Falso" en la redonma:
 
 ```markdown
 ---
