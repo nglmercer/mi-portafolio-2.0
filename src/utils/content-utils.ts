@@ -12,20 +12,20 @@ export async function getSortedPosts() {
     return dateA > dateB ? -1 : 1
   })
 
+// FIX-TEMPORAL @ts-expect-error
 
   for (let i = 1; i < sorted.length; i++) {
-    // @ts-ignore
+    // @ts-expect-error
     sorted[i].data.nextSlug = sorted[i - 1].slug
-        // @ts-ignore
+        // @ts-expect-error
 
     sorted[i].data.nextTitle = sorted[i - 1].data.title
   }
   for (let i = 0; i < sorted.length - 1; i++) {
-        // @ts-ignore
+        // @ts-expect-error
 
     sorted[i].data.prevSlug = sorted[i + 1].slug
-        // @ts-ignore
-
+      // @ts-expect-error
     sorted[i].data.prevTitle = sorted[i + 1].data.title
   }
 
