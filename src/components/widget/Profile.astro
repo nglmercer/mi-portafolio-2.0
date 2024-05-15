@@ -24,9 +24,9 @@ const config = profileConfig;
     <div class="flex gap-2 mx-2 justify-center mb-4">
         {config.links.map(item =>
             <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
-                <Icon name={item.icon} size="1.5rem"></Icon>
+                <Icon name={item.icon} size={15}></Icon>
             </a>
         )}
-    </div>
+    </div><!--size="1.5rem" -->
 </div>
 
