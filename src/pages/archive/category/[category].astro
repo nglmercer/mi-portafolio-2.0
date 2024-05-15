@@ -21,5 +21,6 @@ const { category } = Astro.params;
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)} description={i18n(I18nKey.archive)}>
+    <!-- @ts-expect-error -->
     <ArchivePanel categories={[category]}></ArchivePanel>
 </MainGridLayout>

@@ -47,15 +47,18 @@ const className = Astro.props.class
     class WidgetLayout extends HTMLElement {
         constructor() {
             super();
-
+            // @ts-expect-error
             if (this.dataset.isCollapsed === undefined || this.dataset.isCollapsed === false)
                 return;
 
             const id = this.dataset.id;
             const btn = this.querySelector('.expand-btn');
             const wrapper = this.querySelector(`#${id}`)
+            // @ts-expect-error
             btn.addEventListener('click', () => {
+                // @ts-expect-error
                 wrapper.classList.remove('collapsed');
+                // @ts-expect-error
                 btn.classList.add('hidden');
             })
         }
