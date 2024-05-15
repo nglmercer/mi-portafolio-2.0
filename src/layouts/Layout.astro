@@ -256,10 +256,12 @@ function setClickOutsideToClose(panel: string, ignores: string[]) {
 		let tDom = event.target;
 		for (let ig of ignores) {
 			let ie = document.getElementById(ig)
+			// @ts-expect-error
 			if (ie == tDom || (ie?.contains(tDom))) {
 				return;
 			}
 		}
+		// @ts-expect-error
 		panelDom.classList.add("float-panel-closed");
 	});
 }
@@ -293,6 +295,7 @@ function initCustomScrollbar() {
 		// docs say that a initialization to the body element would affect native functionality like window.scrollTo
 		// but just leave it here for now
 		{
+			// @ts-expect-error
 			target: document.querySelector('body'),
 			cancel: {
 				nativeScrollbarsOverlaid: true,    // don't initialize the overlay scrollbar if there is a native one
@@ -346,10 +349,12 @@ const setup = () => {
 	})
 */
 	// Remove the delay for the first time page load
+	// @ts-expect-error
 	window.swup.hooks.on('link:click', () => {
 		document.documentElement.style.setProperty('--content-delay', '0ms')
 	})
 }
+// @ts-expect-error
 if (window.swup.hooks) {
 	setup()
 } else {

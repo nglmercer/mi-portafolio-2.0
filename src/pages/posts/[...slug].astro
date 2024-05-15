@@ -24,47 +24,44 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
 
+const { Content } = await entry.render();
 const { remarkPluginFrontmatter } = await entry.render();
 
 const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": entry.data.title,
-    "description": entry.data.description || entry.data.title,
-    "keywords": entry.data.tags,
-    "author": {
-        "@type": "Person",
-        "name": profileConfig.name,
-        "url": Astro.site
-    },
-    "datePublished": formatDateToYYYYMMDD(entry.data.published),
-    // TODO include cover image here
-}
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": entry.data.title,
+  "description": entry.data.description || entry.data.title,
+  "keywords": entry.data.tags,
+  "author": {
+    "@type": "Person",
+    "name": profileConfig.name,
+    "url": Astro.site
+  },
+  "datePublished": formatDateToYYYYMMDD(entry.data.published),
+};
 
 ---
-<MainGridLayout banner={entry.data.image || ""} title={entry.data.title} description={entry.data.description}>
+<MainGridLayout title={entry.data.title} banner={entry.data.image}>
     <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4">
-        <div id="post-container" class:list={["card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full ",
-            {}
-        ]}>
-            <!-- word count and reading time -->
-            <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation">
-                <div class="flex flex-row items-center">
-                    <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
-                        <Icon name="material-symbols:notes-rounded"></Icon>
-                    </div>
-                    <div class="text-sm">{remarkPluginFrontmatter.words} {" " + i18n(I18nKey.wordsCount)}</div>
-                </div>
-                <div class="flex flex-row items-center">
-                    <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
-                        <Icon name="material-symbols:schedule-outline-rounded"></Icon>
-                    </div>
-                    <div class="text-sm">{remarkPluginFrontmatter.minutes} {" " + i18n(I18nKey.minutesCount)}</div>
-                </div>
+      <div class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full">
+        <!-- word count and reading time -->
+        <div class="flex flex-row text-black/30 dark:text-white/30 gap-5 mb-3 transition onload-animation">
+          <div class="flex flex-row items-center">
+            <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
+              <Icon name="material-symbols:notes-rounded"></Icon>
             </div>
+            <div class="text-sm">{remarkPluginFrontmatter.words} {" " + i18n(I18nKey.wordsCount)}</div>
+          </div>
+          <div class="flex flex-row items-center">
+            <div class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2">
+              <Icon name="material-symbols:schedule-outline-rounded"></Icon>
+            </div>
+            <div class="text-sm">{remarkPluginFrontmatter.minutes} {" " + i18n(I18nKey.minutesCount)}</div>
+          </div>
+        </div>
 
             <!-- title -->
             <div class="relative onload-animation">
@@ -109,24 +106,35 @@ const jsonLd = {
     </div>
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
-        <a href={getPostUrlBySlug(entry.data.nextSlug)} class="w-full font-bold overflow-hidden active:scale-95">
-            {entry.data.nextSlug && <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center justify-start gap-4" >
-                <Icon name="material-symbols:chevron-left-rounded" size={32} class="text-[var(--primary)]" />
-                <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75">
-                    {entry.data.nextTitle}
-                </div>
-            </div>}
-        </a>
-
-        <a href={getPostUrlBySlug(entry.data.prevSlug)} class="w-full font-bold overflow-hidden active:scale-95">
-            {entry.data.prevSlug && <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center justify-end gap-4">
-                <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75">
-                    {entry.data.prevTitle}
-                </div>
-                <Icon name="material-symbols:chevron-right-rounded" size={32} class="text-[var(--primary)]" />
-            </div>}
-        </a>
-    </div>
+        <!-- Handle next post navigation -->
+         <!-- @ts-expect-error -->
+        {entry.data.nextSlug && (
+            // @ts-expect-error
+          <a href={getPostUrlBySlug(entry.data.nextSlug)} class="w-full font-bold overflow-hidden active:scale-95">
+             <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center justify-start gap-4">
+               <Icon name="material-symbols:chevron-left-rounded" size={32} class="text-[var(--primary)]" />
+               <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75">
+                <!-- @ts-expect-error -->
+                 {entry.data.nextTitle}
+               </div>
+             </div>
+          </a>
+        )}
+        
+        <!-- @ts-expect-error -->
+        {entry.data.prevSlug && (
+            <!-- @ts-expect-error -->
+          <a href={getPostUrlBySlug(entry.data.prevSlug)} class="w-full font-bold overflow-hidden active:scale-95">
+            <div class="btn-card rounded-2xl w-full h-[3.75rem] max-w-full px-4 flex items-center justify-end gap-4">
+              <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap max-w-[calc(100%_-_3rem)] text-black/75 dark:text-white/75">
+                <!-- @ts-expect-error -->
+                {entry.data.prevTitle}
+              </div>
+              <Icon name="material-symbols:chevron-right-rounded" size={32} class="text-[var(--primary)]" />
+            </div>
+          </a>
+        )}
+      </div>
 
 </MainGridLayout>
 
