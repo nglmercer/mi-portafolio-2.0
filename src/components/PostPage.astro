@@ -3,20 +3,30 @@ import { getPostUrlBySlug } from "@utils/url-utils";
 import PostCard from "./PostCard.astro";
 
 const { page } = Astro.props;
-
+interface Entry {
+  slug: string;
+  data: {
+    title: string;
+    tags: string[];
+    category: string;
+    published: string;
+    image?: string; // assuming optional
+    description?: string; // assuming optional
+    draft?: boolean; // assuming optional
+  };
+}
 // asegurar que getPostUrlBySlug no retorne un valor nulo
 const getSafePostUrlBySlug = (slug: string): string => {
-    return getPostUrlBySlug(slug) ?? "/";
+  return getPostUrlBySlug(slug) ?? "/";
 }
 
 let delay = 0;
 const interval = 50;
 ---
 <div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
-    {page.data.map((entry: { data: { draft: boolean; title: string; tags: string[]; category: string; published: Date; image: string; description: string; }; slug: string; }) => {
-      return (
+    {page.data.map((entry: Entry) => (
         <PostCard
-          entry={entry}
+        entry={entry}
           title={entry.data.title}
           tags={entry.data.tags}
           category={entry.data.category}
@@ -25,9 +35,9 @@ const interval = 50;
           image={entry.data.image}
           description={entry.data.description}
           draft={entry.data.draft}
-          class:list="onload-animation"
+          class="onload-animation"
+          words={""} // Passing an empty string or undefined if you have nothing to pass
           style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
-        ></PostCard>
-      );
-    })}
-  </div>
+        />
+    ))}
+</div>
