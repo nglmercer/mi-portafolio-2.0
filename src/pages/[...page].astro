@@ -24,23 +24,25 @@ interface PageProps {
   data: PageData[];
   currentPage: number;
   totalPages: number;
+  start: number;
+  end: number;
+  total: number;
+  size: number;
 }
 
-type Paginate = (items: any[], options: { pageSize: number }) => any; // Ajusta 'any' según corresponda
+type Paginate = (items: any[], options: { pageSize: number }) => any[];
 
 export async function getStaticPaths({ paginate }: { paginate: Paginate }) {
-    const allBlogPosts = await getSortedPosts();
-    return paginate(allBlogPosts, { pageSize: PAGE_SIZE });
+  const allBlogPosts = await getSortedPosts();
+  return paginate(allBlogPosts, { pageSize: PAGE_SIZE });
 }
 
 const { page } = Astro.props as { page: PageProps };
 
 const len = page.data.length;
----
 
-<MainGridLayout>
-    <!-- <div> características -->
-        <PostPage page={page}></PostPage>
-        <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}></Pagination>
-    <!-- </div> -->
+---
+<MainGridLayout title="Blog Title" banner="/path/to/banner.jpg">
+  <PostPage page={page}></PostPage>
+  <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}></Pagination>
 </MainGridLayout>

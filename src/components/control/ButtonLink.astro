@@ -5,7 +5,7 @@ interface Props {
     label?: string
     name?: string
 }
-const { badge, url, name } = Astro.props
+const { badge, url="", name } = Astro.props
 ---
 <a href={url} aria-label={name}>
     <button

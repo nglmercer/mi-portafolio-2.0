@@ -14,11 +14,18 @@ export async function getSortedPosts() {
 
 
   for (let i = 1; i < sorted.length; i++) {
+    // @ts-ignore
     sorted[i].data.nextSlug = sorted[i - 1].slug
+        // @ts-ignore
+
     sorted[i].data.nextTitle = sorted[i - 1].data.title
   }
   for (let i = 0; i < sorted.length - 1; i++) {
+        // @ts-ignore
+
     sorted[i].data.prevSlug = sorted[i + 1].slug
+        // @ts-ignore
+
     sorted[i].data.prevTitle = sorted[i + 1].data.title
   }
 
