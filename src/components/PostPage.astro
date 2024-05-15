@@ -11,55 +11,51 @@ interface Entry {
     title: string;
     tags: string[];
     category: string;
-    published: Date; // assuming it should be a Date type
-    image?: string; // optional property
-    description?: string; // optional property
-    draft?: boolean; // optional property
+    published: Date; // Keep it as string
+    image?: string; // Optional property
+    description?: string; // Optional property
+    draft?: boolean; // Optional property
   };
 }
 
-// asegurar que getPostUrlBySlug no retorne un valor nulo
+// Ensure that getPostUrlBySlug does not return a null value
 const getSafePostUrlBySlug = (slug: string): string => {
   return getPostUrlBySlug(slug) ?? "/";
 }
 
 let delay = 0;
 const interval = 50;
-
-// Assuming the conversion from string to Date is needed.
-const convertToDate = (dateString: string): Date => new Date(dateString);
 ---
 <div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
-    {page.data.map((entry: Entry) => {
-        const {
-            slug,
-            data: {
-                title,
-                tags,
-                category,
-                published,
-                image,
-                description,
-                draft,
-            },
-        } = entry;
+  {page.data.map((entry: Entry) => {
+    const {
+      slug,
+      data: {
+        title,
+        tags,
+        category,
+        published,
+        image,
+        description,
+        draft,
+      },
+    } = entry;
 
-        return (
-            <PostCard
-                key={slug}
-                entry={entry}
-                title={title}
-                tags={tags}
-                category={category}
-                published={convertToDate(published)}
-                url={getSafePostUrlBySlug(slug)}
-                image={image || ""} // Provide default empty string
-                description={description || ""} // Provide default empty string
-                draft={draft ?? false} // Provide default false
-                class="onload-animation"
-                words={0} // Replace with a valid number or compute it
-                style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
-            />
-        );
-    })}
+    return (
+      <PostCard
+        entry={entry}
+        title={title}
+        tags={tags}
+        category={category}
+        published={published} 
+        url={getSafePostUrlBySlug(slug)}
+        image={image || ""} 
+        description={description || ""} 
+        draft={draft ?? false}
+        class="onload-animation"
+        words={0} 
+        style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+      />
+    );
+  })}
 </div>
