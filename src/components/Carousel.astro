@@ -1,0 +1,85 @@
+---
+import { ViewTransitions, slide } from "astro:transitions";
+import { basics } from "@cv";
+import Section from "@/components/Section.astro"
+import X from "@/icons/X.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import Tiktok from "@/icons/Tiktok.astro"
+import Youtube from "@/icons/Youtube.astro"
+import GitHub from "@/icons/GitHub.astro"
+import type { SocialIcon } from "@/types"
+
+const images = [
+  "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg",
+  "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg",
+  "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg",
+];
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const SOCIAL_ICONS: SocialIcon = {
+  GitHub,
+  LinkedIn,
+  X,
+  Tiktok,
+  Youtube,
+}
+---
+<Section>
+  <div class="carousel flex overflow-hidden">
+    <button data-next-button class="next text-6xl ">next!</button>
+    <div class="container1 absolute" transition:animate={slide({ duration: "1s" })}>
+      <ViewTransitions /> 
+      {profiles.map(({ network, url, username }) => {
+        const Icon = SOCIAL_ICONS[network];
+        return (
+          <a
+            title={`Visitar el perfil de ${name} en ${network}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon />
+          </a>
+        );
+      })}
+      <img src={image} alt={name} class="w-full h-full object-cover" /> 
+    </div>
+
+    <button data-back-button class="back text-6xl -right-32 z-10 " >back!</button>
+  </div>
+</Section>
+
+<script is:inline>
+
+  // Encuentra nuestro componente en la página.
+  const next = document.querySelectorAll('[data-next-button]');
+  const button = document.querySelectorAll('button.back');
+  // Agrega event listeners para disparar confetti cuando un botón es clickeado.
+  next.forEach((button) => {
+    button.addEventListener('click', () => showNextIcon());
+  });
+  const back1 = document.querySelectorAll('[data-back-button]');
+
+  // Agrega event listeners para disparar confetti cuando un botón es clickeado.
+  back1.forEach((button) => {
+    button.addEventListener('click', () => showPrevIcon());
+  });
+
+
+  function showNextIcon() {
+    console.log("test")
+  }
+
+  function showPrevIcon() {
+    console.log("test2")
+
+  }
+</script>
+<style>
+  .container1 {
+    border: black chartreuse;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>

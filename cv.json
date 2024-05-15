@@ -1,0 +1,293 @@
+{
+  "basics": {
+    "name": "Melserngl",
+    "label": "Editor, creador de contenido, programador y Desarrollador de aplicaciones interactivas.",
+    "image": "/mi-portafolio/me.png",
+    "email": "nglmercer@gmail.com",
+    "phone": "+51 918722242",
+    "url": "https://midu.dev",
+    "summary": "creador de contenido con 2 años de trayectoria editor, y programador con 1 año de experiencia.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "cerru",
+      "countryCode": "PE",
+      "region": "Peru"
+    },
+    "profiles": [
+      {
+        "network": "Tiktok",
+        "username": "melserng",
+        "url": "https://tiktok.com/@melserng"
+      },
+      {
+        "network": "Youtube",
+        "username": "melserplus",
+        "url": "https://youtube.com/@melserngl"
+      },
+      {
+        "network": "GitHub",
+        "username": "nglmercer",
+        "url": "https://github.com/nglmercer"
+      }
+    ],
+    "imagessrc": "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
+  },
+  "work": [
+    {
+      "name": "streamer en twitch",
+      "position": "creador de contenido",
+      "url": "https://twitch.tv/melser_ngl",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "summary": "Streamer de programación más visto en Español en Twitch. +10k seguidores en varias redes sociales.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Editor de contenido",
+      "position": "Youtube creator content",
+      "url": "https://youtube.com/@melserngl",
+      "startDate": "2020-04-01",
+      "endDate": "2024",
+      "summary": "Mas de 400 videos editados y subidos con mas de 10000 horas de edicion produccion para projectos de diferentes canales.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Tecnico en reparacion electronica",
+      "position": "Tecnology maintancer",
+      "startDate": "2018-03-01",
+      "endDate": "2023-05-01",
+      "summary": "Especializacion y experiencia en reparacion de dispositivos electronicos como moviles computadoras circuitos electronicos.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Desarrollo de aplicaciones web y Desktop",
+      "position": "Development",
+      "startDate": "2018-03-01",
+      "endDate": "2023-05-01",
+      "summary": "Creacion de varias aplicaciones openSource en github con amplia variedad de situaciones y soporte tanton movil como Desktop.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "Aprendizaje laboral.",
+    "url": "https://github.com/nglmercer",
+    "area": "Aprendizaje y experiencia con practicas laborales como recreativas con varios projectos que respaldan mi conocimiento. Software Development and Contain creator",
+    "studyType": "Independiente",
+    "startDate": "2013-01-01",
+    "endDate": "2024-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "twitchTTS",
+      "iframeUrl": "img:https://github.com/nglmercer/Twitch-MineTTS/assets/128845117/a8a4392e-e656-4b08-a544-89b6b4418a91",
+      "isActive": true,
+      "description": "Speech Chat con varias opciones adicionales como un filtro de usuarios , opciones personalizables, soporta aplicaciones juegos interactivos en Live. Web Online.",
+      "highlights": [
+        "Demo en web",
+        "facil de usar",
+        "no requiere instalacion"
+      ],
+      "url": "https://twitch-minetts.onrender.com/"
+    },
+    {
+      "name": "Tiktok Interactive Live",
+      "iframeUrl": "img:https://github.com/nglmercer/Tiktok-twitch-tts-mixitup-v2/assets/128845117/e9a72c41-75f9-4c3e-b859-0be289159720",
+      "isActive": true,
+      "description": "Herramienta multifuncional sonidos, alertas, ovelay, mixitupp API, juegos y live interactivo. Gestion de guardado de Datos e informacion local avanzada de usuario. ",
+      "highlights": [
+        "+1 millón de visitas",
+        "Multidioma",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://github.com/nglmercer/Tiktok-twitch-tts-mixitup-v2"
+    },
+    {
+      "name": "Creacion de contenido desafiante",
+      "iframeUrl": "",
+      "isActive": true,
+      "description": "Experimentacion, innovacion en nuevas maneras de comunicar entrener y asombrar al publico, creacion de nuevas formulas de contenido.",
+      "highlights": [
+        "+3000 usuarios activos",
+        "Retos para cualquier situacion"
+      ],
+      "url": "https://tiktok.com"
+    },
+    {
+      "name": "Comunidad colaborativa",
+      "iframeUrl": "",
+      "isActive": true,
+      "description": "Desarrolle mi plataforma con amplia red de conocimiento, conexion y colaboracion con personas de alta calidad que apoyan y aportan constantemente,",
+      "highlights": [
+        "10k visitas al mes",
+        "Desarrollado por la comunidad"
+      ],
+      "url": "https://discord.com/invite/zFQzPUCDj4",
+      "github": "https://github.com/nglmercer"
+    },
+    {
+      "name": "GitHub APP Documentacion",
+      "iframeUrl": "img:https://github.com/nglmercer/Tiktok-twitch-tts-mixitup-v2/assets/128845117/e9a72c41-75f9-4c3e-b859-0be289159720",
+      "isActive": true,
+      "description": "Documentacion avanzada con creacion avanzada de libreria de datos y conocimientos mostrados de una API desarrollada por mi equipo.",
+      "highlights": [
+        "100% gratuito",
+        "+500 soluciones de la comunidad"
+      ],
+      "url": "https://nglmercer.github.io/TikLiveApp/",
+      "github": "https://github.com/nglmercer/TikLiveApp"
+    },
+    {
+      "name": "Plataforma de soporte constante",
+      "iframeUrl": "img:https://github.com/nglmercer/nglmercer/assets/128845117/b76b08d0-5038-401b-acc1-c651c3c0f2c2",
+      "description": "Creacion de una plataforma de soporte amplio y rapido donde la comunicacion es constante y rapido.",
+      "highlights": [
+        "+99% soporte y solucion continua.",
+        "+50% mas rapido y confiable"
+      ],
+      "url": "https://linktr.ee/melsern?ltsid=b2b4fa34-2a0e-421b-91d8-5d24131136b9"
+    }
+  ]
+}

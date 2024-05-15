@@ -7,8 +7,8 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
+  title: 'melser.dev',
+  subtitle: 'My profile',
   lang: 'es',         // 'en', 'zh_CN', 'zh_TW', 'ja'
   themeColor: {
     hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -34,16 +34,35 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.About,
     {
       name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
+      url: 'https://github.com/nglmercer',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
+      
     },
+    {
+      name: 'dos',
+      url: 'dos',     
+      external: false,       
+      
+    },
+    {
+      name: 'cuatro',
+      url: 'cuatro',     
+      external: false,       
+      
+    },
+    {
+      name: 'mi-portafolio',
+      url: 'lastport',     
+      external: false,       
+      
+    }
   ],
 }
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/bg-profile.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'melse reng',
-  bio: 'melse reng, Traduccion completa al español.',
+  name: 'Melse Rengl',
+  bio: 'Editor, creador de contenido, programador y Desarrollador de aplicaciones interactivas. "-ES-JP-ES-"  ',
   links: [
     {
       name: 'Twitter',
@@ -52,15 +71,25 @@ export const profileConfig: ProfileConfig = {
                                         // `pnpm add @iconify-json/<icon-set-name>`
       url: 'https://twitter.com',
     },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
-    },
+    // {
+    //   name: 'Steam',
+    //   icon: 'fa6-brands:steam',
+    //   url: 'https://store.steampowered.com',
+    // },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/nglmercer',
+    },
+    {
+      name: 'Youtube',
+      icon: 'bxl:youtube',
+      url: 'https://youtube.com/@melserngl',
+    },
+    {
+      name: 'TikTok',
+      icon: 'bxl:tiktok',
+      url: 'https://tiktok.com/@melserng',
     },
   ],
 }

@@ -43,8 +43,8 @@ const { remarkPluginFrontmatter } = await entry.render();
             {title}<Icon class="inline text-[var(--primary)] md:hidden -translate-y-[0.15rem]" name="material-symbols:chevron-right-rounded" size={28} ></Icon>
         </a>
 
-        <!-- metadata -->
-        <PostMetadata published={published} tags={tags} category={category} hideTagsForMobile={true} class:list={{"mb-4": description, "mb-6": !description}}></PostMetadata>
+        <!-- metadata class={description ? "mb-4" : "mb-6"} error partial solution -->
+        <PostMetadata published={published} tags={tags} category={category} hideTagsForMobile={true} class={description ? "mb-4" : "mb-6"} class:list={{"mb-4": description, "mb-6": !description}}></PostMetadata>
 
         <!-- description -->
         <div class="transition text-75 mb-3.5">

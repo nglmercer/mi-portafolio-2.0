@@ -9,10 +9,10 @@ import {siteConfig} from "@/config";
 
 interface Props {
     title: string;
-    banner?: string;
+    banner: string;
     description?: string;
 }
-
+//banner?: string;
 const { title, banner, description } = Astro.props
 const isHomePage = pathsEqual(Astro.url.pathname, '/')
 const enableBanner = siteConfig.banner.enable
