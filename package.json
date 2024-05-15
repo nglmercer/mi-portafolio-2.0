@@ -13,9 +13,7 @@
     "format": "biome format --write ./src",
     "lint": "biome check --apply ./src"
   },
-  
   "dependencies": {
-    "hotkeypad": "0.1.0",
     "@astrojs/check": "^0.5.9",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.2",
@@ -30,6 +28,7 @@
     "astro-icon": "1.1.0",
     "colorjs.io": "^0.5.0",
     "hastscript": "^9.0.0",
+    "hotkeypad": "0.1.0",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
     "overlayscrollbars": "^2.6.1",
@@ -64,5 +63,5 @@
     "@types/sanitize-html": "^2.11.0",
     "stylus": "^0.63.0"
   },
-  "packageManager": "pnpm@6.14.5" 
+  "packageManager": "pnpm@6.14.5"
 }
