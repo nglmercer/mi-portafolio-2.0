@@ -109,8 +109,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
     handler?: () => void
   }
 
-  import HotKeyPad from "hotkeypad"
-
   const hotkeypad = new HotKeyPad()
   const info = hotkeypad.instance.getAttribute("data-info") ?? "[]"
   const parsedInfo = JSON.parse(info) as Info[]

@@ -1,13 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
 import DisplaySettings from "./widget/DisplaySettings.svelte";
-import type {LinkPreset, NavBarLink} from "../types/config";
-import {navBarConfig, siteConfig} from "../config";
+import type { LinkPreset, NavBarLink } from "../types/config";
+import { navBarConfig, siteConfig } from "../config";
 import NavMenuPanel from "./widget/NavMenuPanel.astro";
 import Search from "./Search.svelte";
-import {LinkPresets} from "../constants/link-presets";
+import { LinkPresets } from "../constants/link-presets";
 import LightDarkSwitch from "./LightDarkSwitch.svelte";
-import {url} from "../utils/url-utils";
+import { url } from "../utils/url-utils";
 const className = Astro.props.class;
 
 let links: NavBarLink[] = navBarConfig.links.map((item: NavBarLink | LinkPreset): NavBarLink => {
@@ -81,26 +81,33 @@ function switchTheme() {
 }
 
 function loadButtonScript() {
-    let switchBtn = document.getElementById("scheme-switch");
-    switchBtn.addEventListener("click", function () {
-        switchTheme()
-    });
-
-    let settingBtn = document.getElementById("display-settings-switch");
-    if (settingBtn) {
-        settingBtn.addEventListener("click", function () {
-            let settingPanel = document.getElementById("display-setting");
-            settingPanel.classList.toggle("float-panel-closed");
+    const switchBtn = document.getElementById("scheme-switch");
+    if (switchBtn) {
+        switchBtn.addEventListener("click", function () {
+            switchTheme();
         });
     }
 
-    let menuBtn = document.getElementById("nav-menu-switch");
-    menuBtn.addEventListener("click", function () {
-        let menuPanel = document.getElementById("nav-menu-panel");
-        menuPanel.classList.toggle("float-panel-closed");
-    });
-}
+    const settingBtn = document.getElementById("display-settings-switch");
+    if (settingBtn) {
+        settingBtn.addEventListener("click", function () {
+            const settingPanel = document.getElementById("display-setting");
+            if (settingPanel) {
+                settingPanel.classList.toggle("float-panel-closed");
+            }
+        });
+    }
 
+    const menuBtn = document.getElementById("nav-menu-switch");
+    if (menuBtn) {
+        menuBtn.addEventListener("click", function () {
+            const menuPanel = document.getElementById("nav-menu-panel");
+            if (menuPanel) {
+                menuPanel.classList.toggle("float-panel-closed");
+            }
+        });
+    }
+}
 loadButtonScript();
 
 document.addEventListener('astro:after-swap', () => {

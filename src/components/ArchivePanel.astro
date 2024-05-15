@@ -31,7 +31,7 @@ interface Group {
   posts: Post[];
 }
 
-const { keyword, tags, categories } = Astro.props as Props;
+const { tags, categories } = Astro.props as Props;
 
 let posts: Post[] = await getSortedPosts();
 

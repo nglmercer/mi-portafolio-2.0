@@ -2,20 +2,6 @@ import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
 import { getCollection } from 'astro:content'
 
-type PostData = {
-  title: string,
-  published: string,
-  draft?: boolean,
-  description?: string,
-  image?: string,
-  tags?: string[],
-  category?: string,
-  nextSlug?: string,
-  nextTitle?: string,
-  prevSlug?: string,
-  prevTitle?: string
-}
-
 export async function getSortedPosts() {
   const allBlogPosts = await getCollection('posts', ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true
