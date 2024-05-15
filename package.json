@@ -1,18 +1,18 @@
-packageManager{
-
+{
   "name": "fuwari",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --apply ./src"
   },
+  
   "dependencies": {
     "hotkeypad": "0.1.0",
     "@astrojs/check": "^0.5.9",
