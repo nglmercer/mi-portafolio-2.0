@@ -31,7 +31,7 @@ const oklchToHex = (str) => {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://nglmercer.github.io',
-  base: '/mi-portafolio',
+  base: '/mi-portafolio-2.0',
   trailingSlash: "ignore",
   integrations: [
     tailwind(),
