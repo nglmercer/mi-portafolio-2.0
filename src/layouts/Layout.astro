@@ -21,7 +21,7 @@ interface Props {
 }
 
 let { title, banner, description } = Astro.props;
-const { image, summary, urlbase } = basics
+const { image, summary } = basics
 
 const isHomePage = pathsEqual(Astro.url.pathname, '/');
 

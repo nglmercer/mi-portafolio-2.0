@@ -2,6 +2,20 @@ import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
 import { getCollection } from 'astro:content'
 
+type PostData = {
+  title: string,
+  published: string,
+  draft?: boolean,
+  description?: string,
+  image?: string,
+  tags?: string[],
+  category?: string,
+  nextSlug?: string,
+  nextTitle?: string,
+  prevSlug?: string,
+  prevTitle?: string
+}
+
 export async function getSortedPosts() {
   const allBlogPosts = await getCollection('posts', ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true
@@ -11,6 +25,7 @@ export async function getSortedPosts() {
     const dateB = new Date(b.data.published)
     return dateA > dateB ? -1 : 1
   })
+
 
   for (let i = 1; i < sorted.length; i++) {
     sorted[i].data.nextSlug = sorted[i - 1].slug
@@ -36,7 +51,7 @@ export async function getTagList(): Promise<Tag[]> {
 
   const countMap: { [key: string]: number } = {}
   allBlogPosts.map(post => {
-    post.data.tags.map((tag: string) => {
+    post.data.tags?.map((tag: string) => {
       if (!countMap[tag]) countMap[tag] = 0
       countMap[tag]++
     })

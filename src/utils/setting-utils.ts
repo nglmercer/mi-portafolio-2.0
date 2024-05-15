@@ -12,12 +12,12 @@ export function getHue(): number {
 }
 
 export function setHue(hue: number): void {
-  localStorage.setItem('hue', String(hue))
-  const r = document.querySelector(':root')
+  localStorage.setItem('hue', String(hue));
+  const r = document.querySelector(':root') as HTMLElement; // Aserción de tipo
   if (!r) {
-    return
+    return;
   }
-  r.style.setProperty('--hue', hue)
+  r.style.setProperty('--hue', String(hue));
 }
 
 export function setTheme(theme: string): void {
