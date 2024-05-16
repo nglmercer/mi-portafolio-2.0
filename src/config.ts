@@ -33,29 +33,29 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
+      name: 'Proyectos',
+      url: 'cuatro',     
+      external: false,       
+      
+    },
+    {
+      name: 'antiguo-port',
+      url: 'lastport',     
+      external: false,       
+      
+    },
+    {
       name: 'GitHub',
       url: 'https://github.com/nglmercer',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
       
     },
     {
-      name: 'dos',
+      name: 'nada',
       url: 'dos',     
       external: false,       
       
     },
-    {
-      name: 'cuatro',
-      url: 'cuatro',     
-      external: false,       
-      
-    },
-    {
-      name: 'mi-portafolio',
-      url: 'lastport',     
-      external: false,       
-      
-    }
   ],
 }
 

@@ -1,6 +1,6 @@
 ---
 title: Guías simples para Fuwari
-published: 2024-04-01
+published: 2023-09-01
 description: "Cómo usar esta plantilla de blog."
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]

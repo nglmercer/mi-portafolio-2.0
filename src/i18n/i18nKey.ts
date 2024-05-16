@@ -2,7 +2,7 @@ enum I18nKey {
   home = 'home',
   about = 'about',
   archive = 'archive',
-
+  // traduccion base de navbar en ingles
   tags = 'tags',
   categories = 'categories',
   recentPosts = 'recentPosts',

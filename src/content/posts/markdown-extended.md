@@ -1,6 +1,6 @@
 ---
-title: Características extendidas de Markdown
-published: 2024-05-01
+title: Características e Markdown
+published: 2023-05-01
 description: 'Lea más sobre las funciones de Markdown en Fuwari'
 image: ''
 tags: [Demo, Example, Markdown, Fuwari]

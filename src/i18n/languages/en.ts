@@ -4,16 +4,16 @@ import type { Translation } from '../translation'
 export const en: Translation = {
   [Key.home]: 'Home',
   [Key.about]: 'About',
-  [Key.archive]: 'Archive',
-
+  [Key.archive]: 'Archivos',
+// traduccion base de navbar en English
   [Key.tags]: 'Tags',
-  [Key.categories]: 'Categories',
+  [Key.categories]: 'Categorias',
   [Key.recentPosts]: 'Recent Posts',
 
-  [Key.comments]: 'Comments',
+  [Key.comments]: 'Commentarios',
 
-  [Key.untitled]: 'Untitled',
-  [Key.uncategorized]: 'Uncategorized',
+  [Key.untitled]: 'Sin tiúlo',
+  [Key.uncategorized]: 'Incategorizado',
   [Key.noTags]: 'No Tags',
 
   [Key.wordCount]: 'word',

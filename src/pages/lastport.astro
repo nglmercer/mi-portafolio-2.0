@@ -1,7 +1,7 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+// import Layout from "@/layouts/Layout.astro"
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import { getEntry } from 'astro:content'
+// import { getEntry } from 'astro:content'
 import {i18n} from "../i18n/translation";
 import I18nKey from "../i18n/i18nKey";
 import About from "@/components/sections/About.astro"
@@ -11,9 +11,9 @@ import Hero from "@/components/sections/Hero.astro"
 import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
-import Proyects from "@/components/sections/Proyects.astro"
-import { basics } from "@cv"
-const { name, label } = basics
+// import Proyects from "@/components/sections/Proyects.astro"
+// import { basics } from "@cv"
+// const { name, label } = basics
 ---
 
 <MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
@@ -35,11 +35,9 @@ const { name, label } = basics
   main {
     padding: 10px;
     background-color: var(--card-bg);
+    color: var(--inline-code-color);
     margin: 10px;
     width: 100%;
-  }
-  main .dark {
-    background-color: rgb(20, 20, 20);
   }
   @media (width <= 800px) {
     main {
