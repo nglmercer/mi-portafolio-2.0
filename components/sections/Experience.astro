@@ -1,0 +1,97 @@
+---
+import Section from "../Section.astro"
+
+import { work } from "@cv"
+---
+
+<Section title="Experiencia laboral">
+  <ul>
+    {
+      work.map(
+        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+          const startYear = new Date(startDate).getFullYear()
+          const endYear =
+            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+          const years = `${startYear} - ${endYear}`
+
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>
+                      <a href={url} title={`Ver ${name}`} target="_blank">
+                        {name}
+                      </a>
+                    </h3>
+                    <h4>{position}</h4>
+                  </div>
+
+                  <time>{years}</time>
+                </header>
+
+                <footer>
+                  <p>{summary}</p>
+                </footer>
+              </article>
+            </li>
+          )
+        }
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    justify-content: center;
+  }
+  article h3 {
+    font-weight: 700;
+  }
+  .dark header h3 {
+    color: #8400ff; /* Cambia este color según tus preferencias */
+  }
+  .dark header h3:hover {
+    color: #e0e0e074; /* Cambia este color según tus preferencias */
+  }
+  header h3:hover {
+    color: #00000074; /* Cambia este color según tus preferencias */
+  }
+  article a {
+  }
+
+  article a:hover {
+    color: rgba(108, 90, 239, 0.468);
+    text-decoration: underline;
+  }
+  article h4 {
+    border-radius: 10px;
+    border: 10px;
+    background-color: rgba(210, 210, 210, 0.507);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  time {
+    font-size: 0.85rem;
+    min-width: 12px;
+  }
+
+  @media (width <= 700px) {
+    time {
+      text-align: right;
+    }
+  }
+</style>
