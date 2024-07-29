@@ -5,7 +5,7 @@ description: "Cómo usar esta plantilla de blog."
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]
 category: Guides
-draft: false
+draft: true
 ---
 
 > Fuente de la imagen de portada: 
