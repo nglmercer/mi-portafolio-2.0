@@ -1,0 +1,49 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import Pagination from "../components/control/Pagination.astro";
+import { getSortedPosts } from "../utils/content-utils";
+import { getPostUrlBySlug } from "../utils/url-utils";
+import { PAGE_SIZE } from "../constants/constants";
+import PostPage from "../components/PostPage.astro";
+
+interface PageData {
+  data: {
+    draft: boolean;
+    title: string;
+    tags: string[];
+    category: string;
+    published: Date;
+    image: string;
+    description: string;
+  };
+  slug: string;
+}
+
+interface PageProps {
+  data: PageData[];
+  currentPage: number;
+  totalPages: number;
+  start: number;
+  end: number;
+  total: number;
+  size: number;
+  lastPage: number;  // @ts-expect-error
+  url: PageUrl;      // Ensure url is defined
+}
+
+type Paginate = (items: any[], options: { pageSize: number }) => any[];
+
+export async function getStaticPaths({ paginate }: { paginate: Paginate }) {
+  const allBlogPosts = await getSortedPosts();
+  return paginate(allBlogPosts, { pageSize: PAGE_SIZE });
+}
+
+const { page } = Astro.props as { page: PageProps };
+
+const len = page.data.length;
+---
+<MainGridLayout title="Blog Title" banner="/path/to/banner.jpg">
+    <PostPage page={page}></PostPage>
+    <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}></Pagination>
+  </MainGridLayout>

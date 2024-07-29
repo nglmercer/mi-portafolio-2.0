@@ -1,0 +1,156 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import {i18n} from "../i18n/translation";
+import I18nKey from "../i18n/i18nKey";
+
+
+import Luxor10Channel from "@/icons/luxor10channel.astro";
+import NaunchiChannel from "@/icons/naunchiChannel.astro";
+---
+
+<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+  <div class="flex overflow-y-auto">
+    <div class="bg-gray-500/75 w-full border-x-cyan-500 rounded-md p-2">
+      <ul class="absolute z-10 text-purple-700 left-1/4 top-0 justify-items-center justify-center text-6xl font-extrabold">
+        Canales editados
+      </ul>
+      <ul class="flex justify-items-center align-middle items-center text-2xl text-wrap">
+        <Luxor10Channel /> Luxor10
+      </ul>
+      <ul class="flex justify-items-center align-middle items-center text-2xl text-wrap">
+        <NaunchiChannel />Naunchi
+      </ul>
+    </div>
+     </div>
+  <div class="container mx-auto px-4 py-8 h-dvh">
+
+      <div class="carousel relative w-full h-full overflow-hidden rounded-lg shadow-lg">
+        <!-- Carousel Inputs -->
+        <input type="radio" name="carousel" id="slide1" class="hidden" checked>
+        <input type="radio" name="carousel" id="slide2" class="hidden">
+        <input type="radio" name="carousel" id="slide3" class="hidden">
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner grid grid-cols-3 w-full h-full transition-transform duration-500 ease-in-out">
+          <div class="itemCarrouselTarjeta">
+            <iframe src="https://www.youtube.com/embed/l5uj7x3muVE"></iframe>
+          </div>
+          <div class="itemCarrouselTarjeta">
+            <iframe src="https://www.youtube.com/embed/MZn40uyHcOo"></iframe>
+          </div>
+          <div class="itemCarrouselTarjeta">
+            <iframe src="https://www.youtube.com/embed/QbgJ_tDeEFU"></iframe>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+          <label for="slide1" class="transition duration-300">🟪</label>
+          <label for="slide2" class="transition duration-300">🟩</label>
+          <label for="slide3" class="transition duration-300">🟦</label>
+        </div>
+      </div>
+      
+
+    </main>
+  </div>
+</MainGridLayout>
+<style>
+iframe {
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.carousel {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.itemCarrouselTarjeta {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta img {
+    
+    object-fit: contain;
+}
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-controls label {
+    padding: 4px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls label:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+.carousel-controls label::before {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hacemos los cambios responsive */
+@media (max-width: 800px) {
+    .carousel {
+    }
+}
+</style>

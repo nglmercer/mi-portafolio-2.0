@@ -1,0 +1,61 @@
+---
+import { getPostUrlBySlug } from "@utils/url-utils";
+import PostCard from "./PostCard.astro";
+
+const { page } = Astro.props;
+
+// Define the interface
+interface Entry {
+  slug: string;
+  data: {
+    title: string;
+    tags: string[];
+    category: string;
+    published: Date; // Keep it as string
+    image?: string; // Optional property
+    description?: string; // Optional property
+    draft?: boolean; // Optional property
+  };
+}
+
+// Ensure that getPostUrlBySlug does not return a null value
+const getSafePostUrlBySlug = (slug: string): string => {
+  return getPostUrlBySlug(slug) ?? "/";
+}
+
+let delay = 0;
+const interval = 50;
+---
+<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+  {page.data.map((entry: Entry) => {
+    const {
+      slug,
+      data: {
+        title,
+        tags,
+        category,
+        published,
+        image,
+        description,
+        draft,
+      },
+    } = entry;
+
+    return (
+      <PostCard
+        entry={entry}
+        title={title}
+        tags={tags}
+        category={category}
+        published={published} 
+        url={getSafePostUrlBySlug(slug)}
+        image={image || ""} 
+        description={description || ""} 
+        draft={draft ?? false}
+        class="onload-animation"
+        words={0} 
+        style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+      />
+    );
+  })}
+</div>
