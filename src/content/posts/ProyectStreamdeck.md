@@ -5,7 +5,7 @@ tags: [Desarrollo, Streamdeck, Demo, Live]
 category: Desarrollo
 description: App de streamdeck que ayuda a modificar y cambiar el obs asi como controles de audio y atajos.
 image: "https://raw.githubusercontent.com/nglmercer/Tiktok-Live-TTS-APPv2/main/tikliveappview.png"
-draft: true
+draft: false
 ---
 
 # GatoDeck

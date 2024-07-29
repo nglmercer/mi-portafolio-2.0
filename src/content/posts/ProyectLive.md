@@ -5,7 +5,7 @@ tags: [Desarrollo, Interactivo, Demo, Live]
 category: Desarrollo
 description: App de live interactivo para tiktok usando electron .
 image: "https://raw.githubusercontent.com/nglmercer/Tiktok-Live-TTS-APPv2/main/tikliveappview.png"
-draft: true
+draft: false
 ---
 
 # Tiktok Live app
