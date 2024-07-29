@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>melser.dev</title><description>My profile</description><link>https://nglmercer.github.io/</link><language>es</language><item><title>TiktokLive App de live interactivo</title><link>https://nglmercer.github.io/posts/proyectlive/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/proyectlive/</guid><description>App de live interactivo para tiktok usando electron .</description><pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Tiktok Live app&lt;/h1&gt;
+&lt;h1&gt;Funcionalidades:&lt;/h1&gt;
+&lt;h3&gt;Speechchat voice chat &amp;lt;font color=&quot;Gold&quot;&amp;gt;Texto a voz.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(el bot lee tus mensajes)&lt;/p&gt;
+&lt;h3&gt;SoundAlerts &amp;lt;font color=&quot;Gold&quot;&amp;gt;Sonidos y Alertas.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(tiene soporte de alertas de audios y videos)&lt;/p&gt;
+&lt;h3&gt;twitch Crossover &amp;lt;font color=&quot;Gold&quot;&amp;gt;MixitupChat.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(puedes conectar tus comandos y el chat de twitch)&lt;/p&gt;
+&lt;h3&gt;MixitupApp API support &amp;lt;font color=&quot;Gold&quot;&amp;gt;MixitupApi.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(conecta mixitupApp para usar todas las herramientas)&lt;/p&gt;
+&lt;h3&gt;Minecraft interactive Bot  &amp;lt;font color=&quot;Gold&quot;&amp;gt;Minecraft Live.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(crea un bot para que envie los comandos que configures )&lt;/p&gt;
+&lt;h3&gt;VRChat chatbox support  &amp;lt;font color=&quot;Gold&quot;&amp;gt;VRchat Chat ingame.&amp;lt;/font&amp;gt;&lt;/h3&gt;
+&lt;p&gt;(envia los mensajes al chatbox para leerlo o mostrarlo en el juego)
+&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/qVMJLtRIEdw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://nglmercer.github.io/TikLiveApp&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/CLICK%20PARA%20LEER%20O%20REVISAR%20DOCUMENTACION-Click%20aqu%C3%AD%20para%20leer%20toda%20la%20documentaci%C3%B3n-blue?style=for-the-badge&amp;amp;logo=github&quot; alt=&quot; click para Leer o revisar documentación&quot; /&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>StreamDeck</title><link>https://nglmercer.github.io/posts/proyectstreamdeck/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/proyectstreamdeck/</guid><description>App de streamdeck que ayuda a modificar y cambiar el obs asi como controles de audio y atajos.</description><pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;GatoDeck&lt;/h1&gt;
+&lt;h2&gt;¿Qué es el GatoDeck?&lt;/h2&gt;
+&lt;h2&gt;El &lt;strong&gt;GatoDeck&lt;/strong&gt; es una herramienta en python la cual nos da la posibilidad de tener un &lt;strong&gt;Stream Deck&lt;/strong&gt; pero de forma completamente virtual y gratis, la cual se puede conectar al obs por websocket para controlar el obs completamente y tambien puedes usar el GatoDeck para controlar la multimedia de tu computadora con windows y funciones personalizadas que quieras agregar por du cuenta desde la web del GatoDeck, la herramienta esta pensada en ofrecernos una interfaz a traves de web para poder abrir la interfaz desde cualquier dispositivo que soporte un navegador web en tu red local para controlar desde otro equipo tu computadora y el obs.&lt;/h2&gt;
+</content:encoded></item><item><title>Ejemplo de borrador</title><link>https://nglmercer.github.io/posts/draft/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/draft/</guid><pubDate>Fri, 01 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Este artículo es un borrador&lt;/h1&gt;
+&lt;p&gt;Este artículo se encuentra actualmente en un borrador de estado y no se publica.Por lo tanto, no será visible para la audiencia general.El contenido sigue siendo un trabajo en progreso y puede requerir una mayor edición y revisión.&lt;/p&gt;
+&lt;p&gt;Cuando el artículo está listo para su publicación, puede actualizar el campo &quot;Borrador&quot; a &quot;Falso&quot; en la redonma:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: Draft Example
+published: 2024-01-11T04:40:26.381Z
+tags: [Markdown, Blogging, Demo]
+category: Examples
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Guías simples para Fuwari</title><link>https://nglmercer.github.io/posts/guide/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/guide/</guid><description>Cómo usar esta plantilla de blog.</description><pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Fuente de la imagen de portada: &lt;a href=&quot;https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta plantilla de blog está construida con &lt;a href=&quot;https://astro.build/&quot;&gt;Astro&lt;/a&gt;.Para las cosas que son no mencionado en esta guía, puede encontrar las respuestas en el &lt;a href=&quot;https://docs.astro.build/&quot;&gt;Astro Docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Front-Matter of Publics&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: Mi primera publicación de blog
+published: 2023-09-09
+description: Esta es la primera publicación de mi nuevo blog Astro.
+image: ./cover.jpg
+tags: [Foo, Bar]
+category: Front-end
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Descripción&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;El título de la publicación.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;published&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;La fecha en que se publicó la publicación.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Una breve descripción de la publicación.Se muestra en la página de índice.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The cover image path of the post.&amp;lt;br/&amp;gt;1. Start with &lt;code&gt;http://&lt;/code&gt; or &lt;code&gt;https://&lt;/code&gt;: Use web image&amp;lt;br/&amp;gt;2. Start with &lt;code&gt;/&lt;/code&gt;: For image in &lt;code&gt;public&lt;/code&gt; dir&amp;lt;br/&amp;gt;3. With none of the prefixes: Relative to the markdown file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Las etiquetas de la publicación.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;category&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;La categoría de la publicación.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Si esta publicación sigue siendo un borrador, que no se mostrará.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;dónde colocar los archivos de publicación&lt;/h2&gt;
+&lt;p&gt;Sus archivos de publicación deben colocarse en&lt;code&gt;src/content/posts/&lt;/code&gt; directorio.También puede crear subdirectorios para organizar mejor sus publicaciones y activos.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/content/posts/
+├── post-1.md
+└── post-2/
+    ├── cover.png
+    └── index.md
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Características e Markdown</title><link>https://nglmercer.github.io/posts/markdown-extended/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/markdown-extended/</guid><description>Lea más sobre las funciones de Markdown en Fuwari</description><pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Tarjetas de repositorio de Github&lt;/h2&gt;
+&lt;p&gt;Puede agregar tarjetas dinámicas que vinculen a los repositorios de GitHub, en la carga de la página, la información del repositorio se extrae de la API de GitHub.&lt;/p&gt;
+&lt;p&gt;::github{repo=&quot;Fabrizz/MMM-OnSpotify&quot;}&lt;/p&gt;
+&lt;p&gt;Create a GitHub repository card with the code &lt;code&gt;::github{repo=&quot;&amp;lt;owner&amp;gt;/&amp;lt;repo&amp;gt;&quot;}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;::github{repo=&quot;saicaca/fuwari&quot;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Advertencias&lt;/h2&gt;
+&lt;p&gt;Se admiten los siguientes tipos de advertencias: &lt;code&gt;nota`` tip&lt;/code&gt; &lt;code&gt;importante`` advertencia&lt;/code&gt; `precaución &apos;&lt;/p&gt;
+&lt;p&gt;:::note
+Highlights information that users should take into account, even when skimming.
+:::&lt;/p&gt;
+&lt;p&gt;:::tip
+Optional information to help a user be more successful.
+:::&lt;/p&gt;
+&lt;p&gt;:::important
+Crucial information necessary for users to succeed.
+:::&lt;/p&gt;
+&lt;p&gt;:::warning
+Critical content demanding immediate user attention due to potential risks.
+:::&lt;/p&gt;
+&lt;p&gt;:::caution
+Negative potential consequences of an action.
+:::&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:::note
+Highlights information that users should take into account, even when skimming.
+:::
+
+:::tip
+Optional information to help a user be more successful.
+:::
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El título de la advertencia se puede personalizar.&lt;/p&gt;
+&lt;p&gt;:::note[MY CUSTOM TITLE]
+This is a note with a custom title.
+:::&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:::note[MY CUSTOM TITLE]
+This is a note with a custom title.
+:::
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>Ejemplo de markdown</title><link>https://nglmercer.github.io/posts/markdown/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/markdown/</guid><description>Un simple ejemplo de una publicación de blog de Markdown.</description><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Un encabezado H1&lt;/h1&gt;
+&lt;p&gt;Los párrafos están separados por una línea en blanco.&lt;/p&gt;
+&lt;p&gt;2 ° párrafo.&lt;em&gt;Italic&lt;/em&gt;, ** negrita ** y &lt;code&gt;monoespace&lt;/code&gt;.Listas detalladas
+parece:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Éste&lt;/li&gt;
+&lt;li&gt;Aquél&lt;/li&gt;
+&lt;li&gt;el otro
+Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Las citas de bloque son
+Escrito así.&lt;/p&gt;
+&lt;p&gt;Pueden abarcar múltiples párrafos,
+Si quieres.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Use 3 guiones para un EM-Dash.Use 2 guiones para rangos (por ejemplo, &quot;es todo
+En los capítulos 12-14 &quot;). Tres puntos ... se convertirán en un elipsis.
+Unicode es compatible.☺&lt;/p&gt;
+&lt;h2&gt;Un encabezado H2&lt;/h2&gt;
+&lt;p&gt;Aquí hay una lista numerada:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Primer elemento&lt;/li&gt;
+&lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;li&gt;Tercer artículo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tenga en cuenta nuevamente cómo el texto real comienza en 4 columnas en (4 caracteres
+desde el lado izquierdo).Aquí hay una muestra de código:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Déjame reiterarse ...
+para i en 1 .. 10 {do-something (i)}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como probablemente adivinó, sangró 4 espacios.Por cierto, en lugar de
+Error al bloque, puede usar bloques delimitados, si lo desea:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Lo que facilita la copia y el pegado).Opcionalmente puede marcar el
+Bloque delimitado para que PANDOC sea sintaxis resaltarlo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Un encabezado H3&lt;/h3&gt;
+&lt;p&gt;Ahora una lista anidada:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Primero, obtenga estos ingredientes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;zanahorias&lt;/li&gt;
+&lt;li&gt;apio&lt;/li&gt;
+&lt;li&gt;lentejas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hervir un poco de agua.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Volcar todo en la olla y seguir
+Este algoritmo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Encuentra una cuchara de madera
+ descubrir bote
+ remover
+ bote de cubierta
+ Balance de la cuchara de madera precariamente en el mango de la olla
+ espera 10 minutos
+ GOTO primer paso (o apague el quemador cuando esté terminado)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;No golpee una cuchara de madera o caerá.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).&lt;/p&gt;
+&lt;p&gt;Here&apos;s a link to &lt;a href=&quot;http://foo.bar&quot;&gt;a website&lt;/a&gt;, to a &lt;a href=&quot;local-doc.html&quot;&gt;local
+doc&lt;/a&gt;, and to a &lt;a href=&quot;#an-h2-header&quot;&gt;section heading in the current
+doc&lt;/a&gt;. Here&apos;s a footnote [^1].&lt;/p&gt;
+&lt;p&gt;[^1]: Footnote text goes here.&lt;/p&gt;
+&lt;p&gt;Tables can look like this:&lt;/p&gt;
+&lt;p&gt;size material color&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;9 de cuero marrón
+10 lienzo de cáñamo natural
+11 Vidry Transparent&lt;/p&gt;
+&lt;p&gt;Mesa: zapatos, sus tamaños y de qué están hechos&lt;/p&gt;
+&lt;p&gt;(Lo anterior es el subtítulo de la tabla). PANDOC también admite
+Tablas de múltiples líneas:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;keyword text&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;puestas de sol rojas, manzanas y
+otros rojos o rojizos
+cosas.&lt;/p&gt;
+&lt;h2&gt;Hojas verdes, hierba, ranas
+y otras cosas son
+No es fácil ser.&lt;/h2&gt;
+&lt;p&gt;A horizontal rule follows.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Here&apos;s a definition list:&lt;/p&gt;
+&lt;p&gt;apples
+: Good for making applesauce.
+oranges
+: Citrus!
+tomatoes
+: There&apos;s no &quot;e&quot; in tomatoe.&lt;/p&gt;
+&lt;p&gt;Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)&lt;/p&gt;
+&lt;p&gt;Here&apos;s a &quot;line block&quot;:&lt;/p&gt;
+&lt;p&gt;| Line one
+| Line too
+| Line tree&lt;/p&gt;
+&lt;p&gt;and images can be specified like so:&lt;/p&gt;
+&lt;p&gt;&amp;lt;!-- [//]: # (![example image](./demo-banner.png &quot;An exemplary image&quot;)) --&amp;gt;&lt;/p&gt;
+&lt;p&gt;Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:&lt;/p&gt;
+&lt;p&gt;$$I = \int \rho R^{2} dV$$&lt;/p&gt;
+&lt;p&gt;And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
+</content:encoded></item><item><title>Incluir video en las publicaciones</title><link>https://nglmercer.github.io/posts/video/</link><guid isPermaLink="true">https://nglmercer.github.io/posts/video/</guid><description>Esta publicación demuestra cómo incluir video integrado en una publicación de blog.</description><pubDate>Tue, 01 Aug 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Fuente de la imagen de portada: &lt;a href=&quot;https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg&quot;&gt;Source&lt;/a&gt;
+Simplemente copie el código de incrustación de YouTube u otras plataformas y péguelo en el archivo de Markdown.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: Incluir video en la publicación
+published: 2023-10-19
+// ...
+---
+
+&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;YouTube&lt;/h2&gt;
+&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+&lt;h2&gt;Bilibili&lt;/h2&gt;
+&lt;p&gt;&amp;lt;iframe width=&quot;100%&quot; height=&quot;468&quot; src=&quot;//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&amp;amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/p&gt;
+</content:encoded></item></channel></rss>

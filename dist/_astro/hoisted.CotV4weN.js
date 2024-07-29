@@ -1,0 +1,1 @@
+import"./hoisted.D2sCyQqR.js";import"./setting-utils.BzCrnn_u.js";const t=document.getElementById("footer-button");t?.addEventListener("click",()=>{var e=new KeyboardEvent("keydown",{key:"K",code:"KeyK",keyCode:75,which:75,ctrlKey:!0,altKey:!1,shiftKey:!1,metaKey:!1});document.dispatchEvent(e)});
